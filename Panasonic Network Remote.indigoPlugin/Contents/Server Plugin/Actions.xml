@@ -1,0 +1,473 @@
+<?xml version="1.0"?>
+<Actions>
+	
+	<Action id="poweron" deviceFilter="self">
+		<Name>Power (Wake-on-Lan)</Name>
+		<CallbackMethod>poweron</CallbackMethod>
+	</Action>
+	
+	<Action id="poweroff" deviceFilter="self">
+		<Name>Power (Standby Toggle)</Name>
+		<CallbackMethod>poweroff</CallbackMethod>
+	</Action>
+	
+	<Action id="sep01A"/>
+	
+	<Action id="decToSerial" deviceFilter="self" uiPath="Channel/Input">
+		<Name>Number 0</Name>
+		<CallbackMethod>num0</CallbackMethod>
+	</Action>
+	
+	<Action id="decToSerial1" deviceFilter="self" uiPath="Channel/Input">
+		<Name>Number 1</Name>
+		<CallbackMethod>num1</CallbackMethod>
+	</Action>
+	
+	<Action id="decToSerial2" deviceFilter="self" uiPath="Channel/Input">
+		<Name>Number 2</Name>
+		<CallbackMethod>num2</CallbackMethod>
+	</Action>
+	
+	<Action id="decToSerial3" deviceFilter="self" uiPath="Channel/Input">
+		<Name>Number 3</Name>
+		<CallbackMethod>num3</CallbackMethod>
+	</Action>
+	
+	<Action id="decToSerial4" deviceFilter="self" uiPath="Channel/Input">
+		<Name>Number 4</Name>
+		<CallbackMethod>num4</CallbackMethod>
+	</Action>
+
+	<Action id="decToSerial5" deviceFilter="self" uiPath="Channel/Input">
+		<Name>Number 5</Name>
+		<CallbackMethod>num5</CallbackMethod>
+	</Action>
+	
+	<Action id="decToSerial6" deviceFilter="self" uiPath="Channel/Input">
+		<Name>Number 6</Name>
+		<CallbackMethod>num6</CallbackMethod>
+	</Action>
+
+	<Action id="decToSerial7" deviceFilter="self" uiPath="Channel/Input">
+		<Name>Number 7</Name>
+		<CallbackMethod>num7</CallbackMethod>
+	</Action>
+	
+	<Action id="decToSerial8" deviceFilter="self" uiPath="Channel/Input">
+		<Name>Number 8</Name>
+		<CallbackMethod>num8</CallbackMethod>
+	</Action>
+	
+	<Action id="decToSerial9" deviceFilter="self" uiPath="Channel/Input">
+		<Name>Number 9</Name>
+		<CallbackMethod>num9</CallbackMethod>
+	</Action>
+	
+	<Action id="sep01" uiPath="Channel/Input"/>
+	
+	<Action id="decToSerial10" deviceFilter="self" uiPath="Channel/Input">
+		<Name>Channel Number</Name>
+		<CallbackMethod>chnum</CallbackMethod>
+		<ConfigUI>
+			<Field id="setting" type="textfield">
+				<Label>Channel Number:</Label>
+			</Field>
+		</ConfigUI>
+		</Action>
+	
+	<Action id="chup" deviceFilter="self" uiPath="Channel/Input">
+		<Name>Channel Up</Name>
+		<CallbackMethod>chup</CallbackMethod>
+	</Action>
+		
+	<Action id="chdown" deviceFilter="self" uiPath="Channel/Input">
+		<Name>Channel Down</Name>
+		<CallbackMethod>chdown</CallbackMethod>
+	</Action>
+	
+	<Action id="lastview" deviceFilter="self" uiPath="Channel/Input">
+		<Name>Last Channel</Name>
+		<CallbackMethod>lastview</CallbackMethod>
+	</Action>
+	
+	<Action id="sep011" uiPath="Channel/Input"/>
+	
+	<Action id="inputtv" deviceFilter="self" uiPath="Channel/Input">
+		<Name>Input TV</Name>
+		<CallbackMethod>inputtv</CallbackMethod>
+	</Action>
+	
+	
+	<Action id="inputhdmi1" deviceFilter="self" uiPath="Channel/Input">
+		<Name>Input HDMI 1</Name>
+		<CallbackMethod>hdmi1</CallbackMethod>
+	</Action>
+	
+	
+	<Action id="inputhdmi2" deviceFilter="self" uiPath="Channel/Input">
+		<Name>Input HDMI 2</Name>
+		<CallbackMethod>hdmi2</CallbackMethod>
+	</Action>
+	
+	
+	<Action id="inputhdmi3" deviceFilter="self" uiPath="Channel/Input">
+		<Name>Input HDMI 3</Name>
+		<CallbackMethod>hdmi3</CallbackMethod>
+	</Action>
+	
+	
+	<Action id="inputhdmi4" deviceFilter="self" uiPath="Channel/Input">
+		<Name>Input HDMI 4</Name>
+		<CallbackMethod>hdmi4</CallbackMethod>
+	</Action>
+	
+	<Action id="inputav" deviceFilter="self" uiPath="Channel/Input">
+		<Name>Inputs (Scrolls TV/AV)</Name>
+		<CallbackMethod>inputav</CallbackMethod>
+	</Action>
+	
+	<Action id="sep02"/>		
+
+	<Action id="volup" deviceFilter="self" uiPath="Sound">
+		<Name>Volume Up</Name>
+		<CallbackMethod>volup</CallbackMethod>
+	</Action>
+	
+	<Action id="voldown" deviceFilter="self" uiPath="Sound">
+		<Name>Volume Down</Name>
+		<CallbackMethod>voldown</CallbackMethod>
+	</Action>
+	
+	<Action id="decToSerial11" deviceFilter="self" uiPath="Sound">
+		<Name>Set Volume</Name>
+		<CallbackMethod>volnum</CallbackMethod>
+		<ConfigUI>
+			<Field id="setvol" type="textfield">
+				<Label>Volume (0 - 100):</Label>
+			</Field>
+		</ConfigUI>
+		</Action>
+	
+	<Action id="mute" deviceFilter="self" uiPath="Sound">
+		<Name>Mute (Toggle)</Name>
+		<CallbackMethod>mute</CallbackMethod>
+	</Action>
+	
+	<Action id="surround" deviceFilter="self" uiPath="Sound">
+		<Name>Surround (Toggle)</Name>
+		<CallbackMethod>surround</CallbackMethod>
+	</Action>
+	
+	<Action id="sep03"/>
+	
+	<Action id="threed" deviceFilter="self" uiPath="Picture">
+		<Name>3D (Toggle)</Name>
+		<CallbackMethod>threed</CallbackMethod>
+	</Action>
+	
+	<Action id="noisered" deviceFilter="self" uiPath="Picture">
+		<Name>Noise Reduction (?)</Name>
+		<CallbackMethod>noisered</CallbackMethod>
+	</Action>
+	
+	<Action id="display" deviceFilter="self" uiPath="Picture">
+		<Name>Aspect</Name>
+		<CallbackMethod>display</CallbackMethod>
+	</Action>
+	
+	<Action id="hold" deviceFilter="self" uiPath="Picture">
+		<Name>Hold</Name>
+		<CallbackMethod>hold</CallbackMethod>
+	</Action>
+	
+	<Action id="sep03A"/>
+	
+	<Action id="guide" deviceFilter="self" uiPath="TV Controls">
+		<Name>Guide</Name>
+		<CallbackMethod>guide</CallbackMethod>
+	</Action>
+	
+	<Action id="epg" deviceFilter="self" uiPath="TV Controls">
+		<Name>EPG</Name>
+		<CallbackMethod>epg</CallbackMethod>
+	</Action>
+	
+	<Action id="sep04"/>
+	
+	<Action id="menu" deviceFilter="self" uiPath="TV Controls">
+		<Name>Menu</Name>
+		<CallbackMethod>menu</CallbackMethod>
+	</Action>
+	
+	<Action id="info" deviceFilter="self" uiPath="TV Controls">
+		<Name>Info</Name>
+		<CallbackMethod>info</CallbackMethod>
+	</Action>
+	
+	<Action id="exit1" deviceFilter="self" uiPath="TV Controls">
+		<Name>Exit</Name>
+		<CallbackMethod>exit1</CallbackMethod>
+	</Action>
+	
+	<Action id="options" deviceFilter="self" uiPath="TV Controls">
+		<Name>Options</Name>
+		<CallbackMethod>option</CallbackMethod>
+	</Action>
+	
+	<Action id="backto" deviceFilter="self" uiPath="TV Controls">
+		<Name>Back/Return</Name>
+		<CallbackMethod>backto</CallbackMethod>
+	</Action>
+	
+	<Action id="home" deviceFilter="self" uiPath="TV Controls">
+		<Name>Home</Name>
+		<CallbackMethod>home</CallbackMethod>
+	</Action>
+	
+	<Action id="subs" deviceFilter="self" uiPath="TV Controls">
+		<Name>Subtitles (Toggles)</Name>
+		<CallbackMethod>subs</CallbackMethod>
+	</Action>
+	
+	<Action id="apps" deviceFilter="self" uiPath="TV Controls">
+		<Name>Apps</Name>
+		<CallbackMethod>apps</CallbackMethod>
+	</Action>
+	
+	<Action id="sep06"/>
+	
+	<Action id="ok" deviceFilter="self"  uiPath="Movement">
+		<Name>Okay</Name>
+		<CallbackMethod>ok</CallbackMethod>
+	</Action>
+		
+	<Action id="up" deviceFilter="self" uiPath="Movement">
+		<Name>Control Up</Name>
+		<CallbackMethod>up</CallbackMethod>
+	</Action>
+	
+	<Action id="right" deviceFilter="self" uiPath="Movement">
+		<Name>Control Right</Name>
+		<CallbackMethod>right</CallbackMethod>
+	</Action>
+	
+	<Action id="down" deviceFilter="self" uiPath="Movement">
+		<Name>Control Down</Name>
+		<CallbackMethod>down</CallbackMethod>
+	</Action>
+	
+	<Action id="left" deviceFilter="self" uiPath="Movement">
+		<Name>Control Left</Name>
+		<CallbackMethod>left</CallbackMethod>
+	</Action>
+	
+	<Action id="sep05"/>
+	
+	<Action id="play" deviceFilter="self" uiPath="Media Controls">
+		<Name>Play</Name>
+		<CallbackMethod>play</CallbackMethod>
+	</Action>
+	
+	<Action id="pause" deviceFilter="self" uiPath="Media Controls">
+		<Name>Pause</Name>
+		<CallbackMethod>pause</CallbackMethod>
+	</Action>
+	
+	<Action id="stop" deviceFilter="self" uiPath="Media Controls">
+		<Name>Stop</Name>
+		<CallbackMethod>stop</CallbackMethod>
+	</Action>
+	
+	<Action id="record" deviceFilter="self" uiPath="Media Controls">
+		<Name>Record</Name>
+		<CallbackMethod>record</CallbackMethod>
+	</Action>
+	
+	<Action id="fforward" deviceFilter="self" uiPath="Media Controls">
+		<Name>Fast Forward</Name>
+		<CallbackMethod>fforward</CallbackMethod>
+	</Action>
+	
+	<Action id="rewind" deviceFilter="self" uiPath="Media Controls">
+		<Name>Rewind</Name>
+		<CallbackMethod>rewind</CallbackMethod>
+	</Action>
+	
+	<Action id="Skipf" deviceFilter="self" uiPath="Media Controls">
+		<Name>Skip Forward</Name>
+		<CallbackMethod>none</CallbackMethod>
+	</Action>
+	
+	<Action id="skipb" deviceFilter="self" uiPath="Media Controls">
+		<Name>Skip Back</Name>
+		<CallbackMethod>skipb</CallbackMethod>
+	</Action>
+	
+	<Action id="sep077"/>
+		
+	<Action id="netflix" deviceFilter="self" uiPath="Apps">
+		<Name>Netflix</Name>
+		<CallbackMethod>netflix</CallbackMethod>
+	</Action>
+	
+	<Action id="bbciplayer" deviceFilter="self" uiPath="Apps">
+		<Name>BBC Iplayer</Name>
+		<CallbackMethod>bbciplayer</CallbackMethod>
+	</Action>
+	
+	<Action id="amazon" deviceFilter="self" uiPath="Apps">
+		<Name>Amazon</Name>
+		<CallbackMethod>amazon</CallbackMethod>
+	</Action>
+	
+	<Action id="hulu" deviceFilter="self" uiPath="Apps">
+		<Name>Hulu</Name>
+		<CallbackMethod>hulu</CallbackMethod>
+	</Action>
+	
+	<Action id="bbcnews" deviceFilter="self" uiPath="Apps">
+		<Name>BBC News</Name>
+		<CallbackMethod>bbcnews</CallbackMethod>
+	</Action>
+	
+	<Action id="youtube" deviceFilter="self" uiPath="Apps">
+		<Name>YouTube</Name>
+		<CallbackMethod>youtube</CallbackMethod>
+	</Action>
+	
+	<Action id="recordedtv" deviceFilter="self" uiPath="Apps">
+		<Name>Recorded TV</Name>
+		<CallbackMethod>recordedtv</CallbackMethod>
+	</Action>
+	
+	<Action id="mediaplayer" deviceFilter="self" uiPath="Apps">
+		<Name>Media Player</Name>
+		<CallbackMethod>mediaplayer</CallbackMethod>
+	</Action>
+	
+	<Action id="dlnaplayer" deviceFilter="self" uiPath="Apps">
+		<Name>DLNA Player</Name>
+		<CallbackMethod>dlnaplayer</CallbackMethod>
+	</Action>
+	
+	<Action id="vieralink" deviceFilter="self" uiPath="Apps">
+		<Name>Viera Link</Name>
+		<CallbackMethod>vieralink</CallbackMethod>
+	</Action>
+	
+	<Action id="apptv" deviceFilter="self" uiPath="Apps">
+		<Name>App TV</Name>
+		<CallbackMethod>apptv</CallbackMethod>
+	</Action>
+	
+	<Action id="web" deviceFilter="self" uiPath="Apps">
+		<Name>Web Browser</Name>
+		<CallbackMethod>web</CallbackMethod>
+	</Action>
+	
+	<Action id="skype" deviceFilter="self" uiPath="Apps">
+		<Name>Skype</Name>
+		<CallbackMethod>skype</CallbackMethod>
+	</Action>
+	
+	<Action id="accuweather" deviceFilter="self" uiPath="Apps">
+		<Name>ACC Weather</Name>
+		<CallbackMethod>accuweather</CallbackMethod>
+	</Action>
+	
+	<Action id="wsjlive" deviceFilter="self" uiPath="Apps">
+		<Name>WSJ Live</Name>
+		<CallbackMethod>wsjlive</CallbackMethod>
+	</Action>
+	
+	<Action id="mirroring" deviceFilter="self" uiPath="Apps">
+		<Name>Mirroring</Name>
+		<CallbackMethod>mirroring</CallbackMethod>
+	</Action>
+	
+	<Action id="touch" deviceFilter="self" uiPath="Apps">
+		<Name>Touch</Name>
+		<CallbackMethod>touch</CallbackMethod>
+	</Action>
+	
+	<Action id="reversi" deviceFilter="self" uiPath="Apps">
+		<Name>Reversi</Name>
+		<CallbackMethod>reversi</CallbackMethod>
+	</Action>
+	
+	<Action id="putthree" deviceFilter="self" uiPath="Apps">
+		<Name>Put 3</Name>
+		<CallbackMethod>putthree</CallbackMethod>
+	</Action>
+	
+	<Action id="paint" deviceFilter="self" uiPath="Apps">
+		<Name>Paint</Name>
+		<CallbackMethod>paint</CallbackMethod>
+	</Action>
+	
+	<Action id="jotter" deviceFilter="self" uiPath="Apps">
+		<Name>Jotter</Name>
+		<CallbackMethod>jotter</CallbackMethod>
+	</Action>
+	
+	<Action id="rossiatv" deviceFilter="self" uiPath="Apps">
+		<Name>Rossia TV</Name>
+		<CallbackMethod>rossiatv</CallbackMethod>
+	</Action>
+	
+	<Action id="pandora" deviceFilter="self" uiPath="Apps">
+		<Name>Pandora</Name>
+		<CallbackMethod>pandora</CallbackMethod>
+	</Action>
+	
+	<Action id="match" deviceFilter="self" uiPath="Apps">
+		<Name>Match</Name>
+		<CallbackMethod>match</CallbackMethod>
+	</Action>
+
+	<Action id="weather" deviceFilter="self" uiPath="Apps">
+		<Name>Weather</Name>
+		<CallbackMethod>weather</CallbackMethod>
+	</Action>
+	
+	<Action id="vudo" deviceFilter="self" uiPath="Apps">
+		<Name>Vudu</Name>
+		<CallbackMethod>vudo</CallbackMethod>
+	</Action>
+	
+	<Action id="wuaki" deviceFilter="self" uiPath="Apps">
+		<Name>Wuaki</Name>
+		<CallbackMethod>Wuaki</CallbackMethod>
+	</Action>
+	
+	<Action id="cinemanow" deviceFilter="self" uiPath="Apps">
+		<Name>Cinema Now</Name>
+		<CallbackMethod>cinemanow</CallbackMethod>
+	</Action>
+	
+	
+	<Action id="sep07"/>
+	
+	<Action id="red" deviceFilter="self" uiPath="Colours">
+		<Name>Red</Name>
+		<CallbackMethod>red</CallbackMethod>
+	</Action>
+	
+	<Action id="green" deviceFilter="self" uiPath="Colours">
+		<Name>Green</Name>
+		<CallbackMethod>green</CallbackMethod>
+	</Action>
+	
+	<Action id="yellow" deviceFilter="self" uiPath="Colours">
+		<Name>Yellow</Name>
+		<CallbackMethod>yellow</CallbackMethod>
+	</Action>
+	
+	<Action id="blue" deviceFilter="self" uiPath="Colours">
+		<Name>Blue</Name>
+		<CallbackMethod>blue</CallbackMethod>
+	</Action>
+
+	
+
+</Actions>

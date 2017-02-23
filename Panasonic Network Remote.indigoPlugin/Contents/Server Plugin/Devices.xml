@@ -1,0 +1,42 @@
+<!-- Based on code availible from indigodomo.com examples -->
+<Devices>
+	<Device type="custom" id="panremote">
+		<Name>Panasonic TV</Name>
+		<States>
+			<State id="state">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Device State Changed</TriggerLabel>
+				<TriggerLabelPrefix>TV state</TriggerLabelPrefix>
+				<ControlPageLabel>TV Status</ControlPageLabel>
+				<ControlPageLabelPrefix>TV Status</ControlPageLabelPrefix>
+			</State>
+			
+			<State id="volume">
+				<ValueType>Integer</ValueType>
+				<TriggerLabel>Volume</TriggerLabel>
+				<ControlPageLabel>Volume</ControlPageLabel>
+			</State>
+			
+			<State id="mute">
+				<ValueType booltype="YesNo">Boolean</ValueType>
+				<TriggerLabel>Mute</TriggerLabel>
+				<ControlPageLabel>Mute State</ControlPageLabel>
+			</State>
+		</States>
+		<UiDisplayStateId>state</UiDisplayStateId>
+		<ConfigUI>
+			<Field id="address" type="textfield"
+				tooltip="TV IP Address">
+				<Label>TV IP Address:</Label>
+			</Field>
+			<Field id="macaddress" type="textfield"
+				tooltip="Format aa:aa:aa:aa:aa:aa">
+				<Label>TV MAC Address:</Label>
+			</Field>
+
+		</ConfigUI>
+	</Device>
+
+
+
+</Devices>
