@@ -152,7 +152,7 @@
 		<Name>Volume to variable</Name>
 		<CallbackMethod>volvar</CallbackMethod>
 		<ConfigUI>
-			<Field id="setvar" type="textfield">
+			<Field id="setvar" type="menu">
 				<Label>Variable:</Label>
 				<List class="indigo.variables"/>
 			</Field>
