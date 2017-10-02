@@ -147,6 +147,17 @@
 			</Field>
 		</ConfigUI>
 		</Action>
+		
+	<Action id="decToSerial12" deviceFilter="self" uiPath="Sound">
+		<Name>Volume to variable</Name>
+		<CallbackMethod>volvar</CallbackMethod>
+		<ConfigUI>
+			<Field id="setvar" type="textfield">
+				<Label>Variable:</Label>
+				<List class="indigo.variables"/>
+			</Field>
+		</ConfigUI>
+		</Action>
 	
 	<Action id="mute" deviceFilter="self" uiPath="Sound">
 		<Name>Mute (Toggle)</Name>

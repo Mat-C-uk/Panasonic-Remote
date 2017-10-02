@@ -55,6 +55,9 @@
 #	VERSION 0.1.1
 #	ADDED DELAY IN MULTI DIGET CHANNEL SELECTION
 #
+#	VERSION 0.1.2
+#	ADDED VOLUME FROM SELECTED VARIABLE
+#
 
 import os
 import sys
@@ -423,6 +426,18 @@ class Plugin(indigo.PluginBase):
 		action="Set"
 		sendme="Volume"
 		setvolume = pluginAction.props.get("setvol")
+		prams="<DesiredVolume>"+ setvolume + "</DesiredVolume>" 
+		self.remote_get(sendme, action, prams, dev)
+		
+	def volvar(self, pluginAction):
+		dev = indigo.devices[pluginAction.deviceId]
+		devProps = dev.pluginProps
+		action="Set"
+		sendme="Volume"
+		tempy = int(pluginAction.props.get("setvar"))
+		vargy = indigo.variables[tempy]
+		setvolume=str(vargy.value)
+		indigo.server.log ("volume change to " + setvolume)
 		prams="<DesiredVolume>"+ setvolume + "</DesiredVolume>" 
 		self.remote_get(sendme, action, prams, dev)
 		
